@@ -43,6 +43,7 @@ jobs:
           GOOS=linux GOARCH=386 CGO_ENABLED=0 go build -ldflags "-s -w" -tags netgo -installsuffix netgo -o scanIP-linux-386
           GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -ldflags "-s -w" -tags netgo -installsuffix netgo -o scanIP-linux-amd64
           GOOS=linux GOARCH=arm CGO_ENABLED=0 go build -ldflags "-s -w" -tags netgo -installsuffix netgo -o scanIP-linux-arm
+          GOOS=linux GOARCH=armv7l CGO_ENABLED=0 go build -ldflags "-s -w" -tags netgo -installsuffix netgo -o scanIP-linux-armv7l
           GOOS=linux GOARCH=arm64 CGO_ENABLED=0 go build -ldflags "-s -w" -tags netgo -installsuffix netgo -o scanIP-linux-arm64
           GOOS=linux GOARCH=mips CGO_ENABLED=0 go build -ldflags "-s -w" -tags netgo -installsuffix netgo -o scanIP-linux-mips
           GOOS=linux GOARCH=mips64 CGO_ENABLED=0 go build -ldflags "-s -w" -tags netgo -installsuffix netgo -o scanIP-linux-mips64
